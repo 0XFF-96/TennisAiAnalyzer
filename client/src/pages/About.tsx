@@ -114,7 +114,7 @@ export default function About() {
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Tennis in Action</h3>
             <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
               My passion for tennis drives the development of TennisAI. Here's a glimpse of the key action stages 
-              our AI analyzes - from preparation and backswing to contact point and follow-through.
+              our AI analyzes.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
