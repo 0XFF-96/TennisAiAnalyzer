@@ -6,12 +6,14 @@ import Footer from "@/components/layout/Footer";
 import PoseDetection from "@/components/tennis/PoseDetection";
 import PerformanceScores from "@/components/tennis/PerformanceScores";
 import AnalysisReport from "@/components/tennis/AnalysisReport";
+import StrokeAnalysis from "@/components/tennis/StrokeAnalysis";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
 import { ShareIcon, DownloadIcon } from "lucide-react";
+import { sampleStrokeAnalysis } from "@/lib/mock-data";
 
 export default function AnalysisResult() {
   const [, params] = useRoute<{ id: string }>("/result/:id");
@@ -163,8 +165,14 @@ export default function AnalysisResult() {
                 </TabsList>
                 
                 <TabsContent value="performance" className="mt-0">
-                  {/* Performance Scores */}
+                  {/* Detailed Stroke Analysis (New Component) */}
                   <div className="mb-6">
+                    <StrokeAnalysis analysis={sampleStrokeAnalysis} />
+                  </div>
+                  
+                  {/* Legacy Performance Scores - Can be hidden or kept for reference */}
+                  <div className="mb-6 mt-8 pt-4 border-t border-gray-200">
+                    <h3 className="text-lg font-bold text-gray-800 mb-4">Overall Performance</h3>
                     <PerformanceScores 
                       preparationScore={analysis.preparationScore}
                       swingPathScore={analysis.swingPathScore}

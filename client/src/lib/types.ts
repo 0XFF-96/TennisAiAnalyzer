@@ -38,3 +38,32 @@ export type HistoryFilterOptions = {
 export type TennisAnalysisWithPreview = TennisAnalysis & {
   previewUrl?: string;
 };
+
+// New types for detailed stroke analysis
+export type ActionStage = 'preparation' | 'backswing' | 'contact' | 'follow_through';
+
+export interface StageScore {
+  name: ActionStage;
+  label: string;
+  score: number;
+  maxScore: number;
+}
+
+export interface StrokeObservation {
+  text: string;
+  type: "positive" | "warning" | "negative";
+}
+
+export interface PhaseAnalysis {
+  stageName: ActionStage;
+  stageLabel: string;
+  score: number;
+  observations: StrokeObservation[];
+  improvementSuggestion?: string;
+}
+
+export interface DetailedAnalysis {
+  stageScores: StageScore[];
+  phaseAnalyses: Record<ActionStage, PhaseAnalysis>;
+  activeStage: ActionStage;
+}
