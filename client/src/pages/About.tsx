@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
+import jimmyAvatar from "../assets/jimmy-avatar.jpg";
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -24,8 +25,12 @@ export default function About() {
           <div className="bg-white rounded-xl shadow-md overflow-hidden mb-12">
             <div className="md:flex">
               <div className="md:shrink-0 bg-[#4CAF50]/10 flex items-center justify-center py-8 px-6">
-                <div className="w-48 h-48 rounded-full bg-[#4CAF50]/20 flex items-center justify-center text-[#4CAF50] text-6xl font-bold">
-                  JL
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#4CAF50]/20">
+                  <img 
+                    src={jimmyAvatar} 
+                    alt="Jimmy Li" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="p-8">
