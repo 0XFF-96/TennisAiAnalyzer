@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import tennisCourtImage from "../assets/tennis-court-analysis.png";
 
 export default function Home() {
   const [, navigate] = useLocation();
@@ -41,32 +42,14 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/2 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1594141376010-27de812c1a12?q=80&w=2070" 
+                  src={tennisCourtImage} 
                   alt="Tennis player with AI analysis overlay" 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover rounded-r-xl" 
                   style={{ maxHeight: "500px" }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  {/* AI Keypoints Overlay (Visual Element) */}
-                  <div className="relative w-40 h-64">
-                    {/* Keypoints */}
-                    <div className="keypoint absolute" style={{ top: "20%", left: "50%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "35%", left: "50%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "50%", left: "50%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "35%", left: "30%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "35%", left: "70%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "65%", left: "40%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "65%", left: "60%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "80%", left: "40%" }}></div>
-                    <div className="keypoint absolute" style={{ top: "80%", left: "60%" }}></div>
-                    
-                    {/* Connecting Lines */}
-                    <div className="keypoint-line absolute" style={{ top: "20%", left: "50%", width: "30px", transform: "rotate(90deg)" }}></div>
-                    <div className="keypoint-line absolute" style={{ top: "35%", left: "30%", width: "40px", transform: "rotate(0deg)" }}></div>
-                    <div className="keypoint-line absolute" style={{ top: "35%", left: "50%", width: "30px", transform: "rotate(90deg)" }}></div>
-                    <div className="keypoint-line absolute" style={{ top: "50%", left: "50%", width: "30px", transform: "rotate(125deg)" }}></div>
-                    <div className="keypoint-line absolute" style={{ top: "50%", left: "50%", width: "30px", transform: "rotate(55deg)" }}></div>
-                  </div>
+                <div className="absolute bottom-4 right-4 bg-white/80 rounded-full px-3 py-1 text-sm text-green-800 font-medium flex items-center shadow-sm">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                  AI Analysis Active
                 </div>
               </div>
             </div>
