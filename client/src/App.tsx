@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import Analysis from "@/pages/Analysis";
 import AnalysisResult from "@/pages/AnalysisResult";
 import History from "@/pages/History";
+import About from "@/pages/About";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/analysis" component={Analysis} />
       <Route path="/result/:id" component={AnalysisResult} />
       <Route path="/history" component={History} />
+      <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
   );
