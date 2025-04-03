@@ -6,8 +6,8 @@ import { useLocation } from "wouter";
 import jimmyAvatar from "../assets/jimmy-avatar.jpg";
 import tennis1 from "../assets/tennis1.jpg";
 import tennis2 from "../assets/tennis2.jpg";
-import tennis3 from "../assets/tennis3.jpg";
-import tennis4 from "../assets/tennis-extra1.jpg";
+import tennis3 from "../assets/tennis-extra4.jpg";
+import tennis4 from "../assets/tennis-extra5.jpg";
 import tennis5 from "../assets/tennis-extra2.jpg";
 import tennis6 from "../assets/tennis-extra3.jpg";
 
