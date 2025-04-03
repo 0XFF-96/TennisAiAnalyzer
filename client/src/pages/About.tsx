@@ -7,9 +7,9 @@ import jimmyAvatar from "../assets/jimmy-avatar.jpg";
 import tennis1 from "../assets/tennis1.jpg";
 import tennis2 from "../assets/tennis2.jpg";
 import tennis3 from "../assets/tennis3.jpg";
-import tennis4 from "../assets/tennis4.jpg";
-import tennis5 from "../assets/tennis5.jpg";
-import tennis6 from "../assets/tennis6.jpg";
+import tennis4 from "../assets/tennis-extra1.jpg";
+import tennis5 from "../assets/tennis-extra2.jpg";
+import tennis6 from "../assets/tennis-extra3.jpg";
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -124,9 +124,6 @@ export default function About() {
                   alt="Tennis preparation stance" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Ready Position</span>
-                </div>
               </div>
               
               <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
@@ -135,9 +132,6 @@ export default function About() {
                   alt="Tennis backswing" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Backswing</span>
-                </div>
               </div>
               
               <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
@@ -146,42 +140,30 @@ export default function About() {
                   alt="Tennis serving motion" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Service Motion</span>
-                </div>
               </div>
               
               <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
                 <img 
                   src={tennis4} 
-                  alt="Tennis forehand preparation" 
+                  alt="Tennis service preparation" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Forehand Preparation</span>
-                </div>
               </div>
               
               <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
                 <img 
                   src={tennis5} 
-                  alt="Tennis follow through" 
+                  alt="Tennis reaching for ball" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Follow Through</span>
-                </div>
               </div>
               
               <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
                 <img 
                   src={tennis6} 
-                  alt="Tennis overhead smash" 
+                  alt="Tennis overhead serve" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                  <span className="text-white font-semibold">Overhead Smash</span>
-                </div>
               </div>
             </div>
           </div>
