@@ -4,6 +4,12 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import jimmyAvatar from "../assets/jimmy-avatar.jpg";
+import tennis1 from "../assets/tennis1.jpg";
+import tennis2 from "../assets/tennis2.jpg";
+import tennis3 from "../assets/tennis3.jpg";
+import tennis4 from "../assets/tennis4.jpg";
+import tennis5 from "../assets/tennis5.jpg";
+import tennis6 from "../assets/tennis6.jpg";
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -103,6 +109,83 @@ export default function About() {
             </div>
           </div>
           
+          {/* Tennis Action Gallery */}
+          <div className="bg-white rounded-xl shadow-md p-8 mb-16">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Tennis in Action</h3>
+            <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+              My passion for tennis drives the development of TennisAI. Here's a glimpse of the key action stages 
+              our AI analyzes - from preparation and backswing to contact point and follow-through.
+            </p>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis1} 
+                  alt="Tennis preparation stance" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Ready Position</span>
+                </div>
+              </div>
+              
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis2} 
+                  alt="Tennis backswing" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Backswing</span>
+                </div>
+              </div>
+              
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis3} 
+                  alt="Tennis serving motion" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Service Motion</span>
+                </div>
+              </div>
+              
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis4} 
+                  alt="Tennis forehand preparation" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Forehand Preparation</span>
+                </div>
+              </div>
+              
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis5} 
+                  alt="Tennis follow through" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Follow Through</span>
+                </div>
+              </div>
+              
+              <div className="overflow-hidden rounded-lg shadow-md aspect-square relative group">
+                <img 
+                  src={tennis6} 
+                  alt="Tennis overhead smash" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white font-semibold">Overhead Smash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Technology Stack */}
           <div className="bg-white rounded-xl shadow-md p-8 mb-16">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Our Technology</h3>
